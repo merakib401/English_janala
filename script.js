@@ -34,17 +34,7 @@ const loadWordDetail = async (id) => {
     const details = await res.json();
     displayWordDetail(details.data);
 };
-// "word": "Eager",
-// "meaning": "আগ্রহী",
-// "pronunciation": "ইগার",
-// "level": 1,
-// "sentence": "The kids were eager to open their gifts.",
-// "points": 1,
-// "partsOfSpeech": "adjective",
-// "synonyms": [
-// "enthusiastic",
-// "excited",
-// "keen"
+
 const displayWordDetail = (word) =>{
     const detailsBox = document.getElementById("detail-content")
     detailsBox.innerHTML =`
